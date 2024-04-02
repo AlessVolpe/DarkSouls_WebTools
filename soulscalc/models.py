@@ -1,3 +1,4 @@
+from django import forms
 from django.db import models
 
 
@@ -8,11 +9,11 @@ class Games(models.Model):
     game_icon = models.ImageField(upload_to='')
 
 
-class Calculator(models.Model):
+class Calculator(forms.Form):
     calculator_id = models.AutoField(primary_key=True)
-    souls_needed = models.IntegerField()
-    current_level = models.IntegerField()
-    desired_level = models.IntegerField()
+    souls_needed = forms.IntegerField()
+    current_level = forms.IntegerField()
+    desired_level = forms.IntegerField()
     game_id = models.ForeignKey(Games, on_delete=models.CASCADE)
 
     def __str__(self):

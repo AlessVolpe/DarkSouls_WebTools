@@ -1,0 +1,8 @@
+<h1>Tools</h1>
+<ul>
+{% for tool in object_list %}
+    <li>{{ tool.tool_name }}</li>
+{% empty %}
+    <li>No tools yet.</li>
+{% endfor %}
+</ul>
