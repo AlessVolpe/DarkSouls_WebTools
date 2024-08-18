@@ -1,5 +1,6 @@
 # Dark Souls Souls Calculator
 [![Django CI](https://github.com/AlessVolpe/DarkSouls_WebTools/actions/workflows/django.yml/badge.svg)](https://github.com/AlessVolpe/DarkSouls_WebTools/actions/workflows/django.yml)
+[![Azure Web App](https://github.com/AlessVolpe/DarkSouls_WebTools/actions/workflows/azure-webapps-python.yml/badge.svg)](https://github.com/AlessVolpe/DarkSouls_WebTools/actions/workflows/azure-webapps-python.yml)
 
 This is a Django web application that calculates the number of souls required to level up in the Dark Souls game. The application features a single-page form where users can input their current and desired levels, and it calculates the required souls dynamically.
 
