@@ -17,7 +17,6 @@ This is a Django web application that calculates the number of souls required to
 - Python 3.x
 - Django 3.x or 4.x
 - Pipenv or virtualenv for managing virtual environments
-- Heroku CLI (if deploying to Heroku)
 
 ### Clone the Repository
 
