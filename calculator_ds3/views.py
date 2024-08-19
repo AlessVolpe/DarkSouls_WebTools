@@ -26,7 +26,7 @@ def souls_needed(current, desired):
 
 # View to render the form page
 def calculator_form(request):
-    return render(request, 'souls_calculator/index.html')
+    return render(request, 'calculator_ds3/calculator_ds3.html')
 
 def calculate_souls(request):
     calculator_form(request)

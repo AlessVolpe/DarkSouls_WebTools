@@ -17,7 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+from .views import landing_page, about
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('calculator/', include('souls_calculator.urls')),
+    path('', landing_page, name='landing_page'),
+    path('calculator_ds3/', include('calculator_ds3.urls')),
+    path('about/', about, name='about'),
 ]

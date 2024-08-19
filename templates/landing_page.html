@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <style>
+        .card {
+            background-color: #1c1c1c;
+            color: #e0e0e0;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .card-title {
+            color: #bb86fc;
+        }
+
+        .btn-primary {
+            background-color: #bb86fc !important;
+            border-color: #bb86fc !important;
+        }
+
+        .btn-primary:hover {
+            background-color: #9a67ea !important;
+            border-color: #9a67ea !important;
+        }
+
+        .btn-cluster {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-cluster .btn {
+            flex-grow: 1;
+            margin: 0 5px;
+        }
+    </style>
+    <div class="text-center mb-4">
+        <h1 class="display-4">Dark Souls Web Tools</h1>
+        <p class="lead">Choose the tool you need</p>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Souls Calculator</h5>
+                    <p class="card-text">Calculate how many souls you need for your level ups.</p>
+                    <div class="btn-cluster">
+                        <a href="#" class="btn btn-primary">DS1</a>
+                        <a href="#" class="btn btn-primary">DS2</a>
+                        <a href="/calculator_ds3/" class="btn btn-primary">DS3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add more applets as needed -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Work in progress</h5>
+                    <p class="card-text">I'm really thinking hard about what to add to this tool collection.</p>
+                    <div class="btn-cluster">
+                        <a href="#" class="btn btn-primary">DS1</a>
+                        <a href="#" class="btn btn-primary">DS2</a>
+                        <a href="#" class="btn btn-primary">DS3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Work in progress</h5>
+                    <p class="card-text">I'm really thinking hard about what to add to this tool collection.</p>
+                    <div class="btn-cluster">
+                        <a href="#" class="btn btn-primary">DS1</a>
+                        <a href="#" class="btn btn-primary">DS2</a>
+                        <a href="#" class="btn btn-primary">DS3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
