@@ -16,12 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.conf.urls import handler404, handler500
 
-from .views import landing_page, about
+from . import views
+
+handler404 = 'DarkSouls_WebTools.views.error_404'
+handler500 = 'DarkSouls_WebTools.views.error_500'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', landing_page, name='landing_page'),
+    path('', views.landing_page, name='landing_page'),
     path('calculator_ds3/', include('calculator_ds3.urls')),
-    path('about/', about, name='about'),
+    path('about/', views.about, name='about'),
+    path('404/', views.error_404, name='error_404'),
 ]
