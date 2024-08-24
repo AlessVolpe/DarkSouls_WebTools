@@ -39,7 +39,7 @@ python manage.py migrate
 # Run the development server
 python manage.py migrate
 ```
-Access the application at http://127.0.0.1:8000/calculator/.
+Access the application at http://127.0.0.1:8000/.
 
 ## Usage
 
