@@ -26,7 +26,8 @@ handler500 = 'DarkSouls_WebTools.views.error_500'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.landing_page, name='landing_page'),
-    path('calculator_ds3/', include('calculator_ds3.urls')),
+    path('calculator_ds/', include('calculator_ds.urls')),
+    path('calculator_ds2/', include('calculator_ds2.urls')),
     path('about/', views.about, name='about'),
     path('404/', views.error_404, name='error_404'),
 ]

@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'calculator_ds3.apps.SoulsCalculatorConfig'
+    'calculator_ds.apps.SoulsCalculatorConfig',
+    "calculator_ds2.apps.CalculatorDs2Config"
 ]
 
 MIDDLEWARE = [

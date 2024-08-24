@@ -11,22 +11,22 @@ def levels_2_12(level):
 def levels_13_onwards(level):
     return floor(0.02 * pow(level, 3) + 3.06 * pow(level, 2) + 105.6 * level + 895)
 
-def min_souls_needed(level):
+def min_souls_required(level):
     souls_2_12 = sum(levels_2_12(lvl) for lvl in range(2, min(level + 1, 13)))
     souls_13_onwards = sum(levels_13_onwards(lvl) for lvl in range(13, level + 1))
     return souls_2_12 + souls_13_onwards
 
-def souls_needed(current, desired):
+def souls_required(current, desired):
     if desired <= current or desired < 2:
         return 0
 
-    min_current = min_souls_needed(current)
-    min_desired = min_souls_needed(desired)
+    min_current = min_souls_required(current)
+    min_desired = min_souls_required(desired)
     return min_desired - min_current
 
 # View to render the form page
 def calculator_form(request):
-    return render(request, 'calculator_ds3/calculator_ds3.html')
+    return render(request, 'calculator_ds/calculator_ds.html')
 
 def calculate_souls(request):
     calculator_form(request)
@@ -39,5 +39,5 @@ def calculate_souls(request):
     current_level = int(current_level)
     desired_level = int(desired_level)
 
-    souls = souls_needed(current_level, desired_level)
+    souls = souls_required(current_level, desired_level)
     return JsonResponse({'souls_needed': souls})
