@@ -43,7 +43,7 @@ Access the application at http://127.0.0.1:8000/.
 
 ## Usage
 
-    Navigate to the app: Open http://127.0.0.1:8000/calculator/ in your browser.
+    Navigate to the app: Use the buttons on the homepage.
     Input levels: Enter your current and desired levels.
     View results: The required souls will be displayed dynamically under the form.
 
